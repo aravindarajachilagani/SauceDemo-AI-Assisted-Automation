@@ -1,0 +1,2235 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>38/0/21</td>
+</tr><tr>
+<td>Started on:</td><td>Fri May 15 13:32:24 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>188 seconds (188601 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace156684093", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace156684093'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.setup()'><b>setup</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.teardown()'><b>teardown</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.goToCheckout()'><b>goToCheckout</b><br>Test class: Tests.CheckoutTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.ProductTests.verifyProductCount()'><b>verifyProductCount</b><br>Test class: Tests.ProductTests<br>Test method: Verify 6 products are displayed on products page</td>
+<td></td>
+<td>0</td>
+<td>Tests.ProductTests@2002fc1d</td></tr>
+<tr>
+<td title='Tests.ProductTests.addOneProductVerifyBadge()'><b>addOneProductVerifyBadge</b><br>Test class: Tests.ProductTests<br>Test method: Add one product and verify cart badge shows 1</td>
+<td></td>
+<td>0</td>
+<td>Tests.ProductTests@2002fc1d</td></tr>
+<tr>
+<td title='Tests.ProductTests.addTwoRemoveOneVerifyBadge()'><b>addTwoRemoveOneVerifyBadge</b><br>Test class: Tests.ProductTests<br>Test method: Add two products remove one verify badge shows 1</td>
+<td></td>
+<td>0</td>
+<td>Tests.ProductTests@2002fc1d</td></tr>
+<tr>
+<td title='Tests.ProductTests.verifyPageTitle()'><b>verifyPageTitle</b><br>Test class: Tests.ProductTests<br>Test method: Verify products page title displays Products</td>
+<td></td>
+<td>0</td>
+<td>Tests.ProductTests@2002fc1d</td></tr>
+<tr>
+<td title='Tests.CartTests.verifyProductPrice()'><b>verifyProductPrice</b><br>Test class: Tests.CartTests<br>Test method: Verify product price in cart matches product page</td>
+<td></td>
+<td>0</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.CartTests.verifyProductName()'><b>verifyProductName</b><br>Test class: Tests.CartTests<br>Test method: Verify product name in cart matches product added</td>
+<td></td>
+<td>0</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.ProductTests.sortByPriceHighToLow()'><b>sortByPriceHighToLow</b><br>Test class: Tests.ProductTests<br>Test method: Sort by Price High to Low and verify first price</td>
+<td></td>
+<td>0</td>
+<td>Tests.ProductTests@2002fc1d</td></tr>
+<tr>
+<td title='Tests.ProductTests.verifyButtonChangesToRemove()'><b>verifyButtonChangesToRemove</b><br>Test class: Tests.ProductTests<br>Test method: Verify Add to Cart button changes to Remove</td>
+<td></td>
+<td>0</td>
+<td>Tests.ProductTests@2002fc1d</td></tr>
+<tr>
+<td title='Tests.LoginTests.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: Tests.LoginTests<br>Test method: Invalid login should display correct error message<br>Parameters: , secret_sauce, Username is required</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTests@1e800aaa</td></tr>
+<tr>
+<td title='Tests.LoginTests.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: Tests.LoginTests<br>Test method: Invalid login should display correct error message<br>Parameters: wronguser, secret_sauce, Username and password do not match</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTests@1e800aaa</td></tr>
+<tr>
+<td title='Tests.ProductTests.sortByPriceLowToHigh()'><b>sortByPriceLowToHigh</b><br>Test class: Tests.ProductTests<br>Test method: Sort by Price Low to High and verify first price</td>
+<td></td>
+<td>0</td>
+<td>Tests.ProductTests@2002fc1d</td></tr>
+<tr>
+<td title='Tests.CartTests.verifyCartUrl()'><b>verifyCartUrl</b><br>Test class: Tests.CartTests<br>Test method: Verify cart URL contains cart.html</td>
+<td></td>
+<td>0</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.CartTests.verifyEmptyCart()'><b>verifyEmptyCart</b><br>Test class: Tests.CartTests<br>Test method: Verify empty cart shows no products</td>
+<td></td>
+<td>5</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.LoginTests.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: Tests.LoginTests<br>Test method: Invalid login should display correct error message<br>Parameters: locked_out_user, secret_sauce, Sorry, this user has been locked out</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTests@1e800aaa</td></tr>
+<tr>
+<td title='Tests.LoginTests.logoutTest()'><b>logoutTest</b><br>Test class: Tests.LoginTests<br>Test method: Logout should return user to login page</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTests@1e800aaa</td></tr>
+<tr>
+<td title='Tests.CartTests.removeProductVerifyCartEmpty()'><b>removeProductVerifyCartEmpty</b><br>Test class: Tests.CartTests<br>Test method: Remove product and verify cart is empty</td>
+<td></td>
+<td>5</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.CartTests.verifyCheckoutNavigation()'><b>verifyCheckoutNavigation</b><br>Test class: Tests.CartTests<br>Test method: Verify Checkout button navigates to checkout page</td>
+<td></td>
+<td>0</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.ProductTests.removeProductVerifyBadgeDisappears()'><b>removeProductVerifyBadgeDisappears</b><br>Test class: Tests.ProductTests<br>Test method: Remove product and verify badge disappears</td>
+<td></td>
+<td>5</td>
+<td>Tests.ProductTests@2002fc1d</td></tr>
+<tr>
+<td title='Tests.CartTests.verifyContinueShopping()'><b>verifyContinueShopping</b><br>Test class: Tests.CartTests<br>Test method: Continue Shopping returns to products page</td>
+<td></td>
+<td>0</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.LoginTests.validLoginTest()'><b>validLoginTest</b><br>Test class: Tests.LoginTests<br>Test method: Valid login should navigate to products page</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTests@1e800aaa</td></tr>
+<tr>
+<td title='Tests.ProductTests.sortByNameAtoZ()'><b>sortByNameAtoZ</b><br>Test class: Tests.ProductTests<br>Test method: Sort by Name A to Z and verify first product</td>
+<td></td>
+<td>0</td>
+<td>Tests.ProductTests@2002fc1d</td></tr>
+<tr>
+<td title='Tests.ProductTests.verifyAddToCartButtons()'><b>verifyAddToCartButtons</b><br>Test class: Tests.ProductTests<br>Test method: Verify all products have Add to Cart button</td>
+<td></td>
+<td>0</td>
+<td>Tests.ProductTests@2002fc1d</td></tr>
+<tr>
+<td title='Tests.LoginTests.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: Tests.LoginTests<br>Test method: Invalid login should display correct error message<br>Parameters: standard_user, , Password is required</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTests@1e800aaa</td></tr>
+<tr>
+<td title='Tests.CartTests.removeProductVerifyCount()'><b>removeProductVerifyCount</b><br>Test class: Tests.CartTests<br>Test method: Remove product and verify product count is 0</td>
+<td></td>
+<td>5</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.CartTests.verifyProductQuantity()'><b>verifyProductQuantity</b><br>Test class: Tests.CartTests<br>Test method: Verify product quantity shows 1 by default</td>
+<td></td>
+<td>0</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.CartTests.verifyBadgePersistsAfterContinue()'><b>verifyBadgePersistsAfterContinue</b><br>Test class: Tests.CartTests<br>Test method: Verify cart badge count persists after continuing</td>
+<td></td>
+<td>0</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.LoginTests.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: Tests.LoginTests<br>Test method: Invalid login should display correct error message<br>Parameters: standard_user, wrongpassword, Username and password do not match</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTests@1e800aaa</td></tr>
+<tr>
+<td title='Tests.CartTests.verifyBadgeNotVisibleWhenEmpty()'><b>verifyBadgeNotVisibleWhenEmpty</b><br>Test class: Tests.CartTests<br>Test method: Verify cart badge not visible when cart is empty</td>
+<td></td>
+<td>5</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.ProductTests.addTwoProductsVerifyBadge()'><b>addTwoProductsVerifyBadge</b><br>Test class: Tests.ProductTests<br>Test method: Add two products and verify cart badge shows 2</td>
+<td></td>
+<td>0</td>
+<td>Tests.ProductTests@2002fc1d</td></tr>
+<tr>
+<td title='Tests.ProductTests.sortByNameZtoA()'><b>sortByNameZtoA</b><br>Test class: Tests.ProductTests<br>Test method: Sort by Name Z to A and verify first product</td>
+<td></td>
+<td>0</td>
+<td>Tests.ProductTests@2002fc1d</td></tr>
+<tr>
+<td title='Tests.CartTests.verifyCartTitle()'><b>verifyCartTitle</b><br>Test class: Tests.CartTests<br>Test method: Verify cart page title shows Your Cart</td>
+<td></td>
+<td>0</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.ProductTests.verifyAllProductsHaveNames()'><b>verifyAllProductsHaveNames</b><br>Test class: Tests.ProductTests<br>Test method: Verify all products have names</td>
+<td></td>
+<td>0</td>
+<td>Tests.ProductTests@2002fc1d</td></tr>
+<tr>
+<td title='Tests.CartTests.addTwoRemoveOneVerifyOneRemains()'><b>addTwoRemoveOneVerifyOneRemains</b><br>Test class: Tests.CartTests<br>Test method: Add two products remove one verify one remains</td>
+<td></td>
+<td>0</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.ProductTests.verifyAllProductsHavePrices()'><b>verifyAllProductsHavePrices</b><br>Test class: Tests.ProductTests<br>Test method: Verify all products have prices</td>
+<td></td>
+<td>0</td>
+<td>Tests.ProductTests@2002fc1d</td></tr>
+<tr>
+<td title='Tests.CartTests.verifyRemovedProductGone()'><b>verifyRemovedProductGone</b><br>Test class: Tests.CartTests<br>Test method: Verify removed product no longer shows in cart</td>
+<td></td>
+<td>5</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.CartTests.verifyProductsPageAfterContinue()'><b>verifyProductsPageAfterContinue</b><br>Test class: Tests.CartTests<br>Test method: Verify products page title after Continue Shopping</td>
+<td></td>
+<td>0</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.CartTests.verifyCheckoutUrl()'><b>verifyCheckoutUrl</b><br>Test class: Tests.CartTests<br>Test method: Verify checkout URL contains checkout-step-one</td>
+<td></td>
+<td>0</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+<tr>
+<td title='Tests.CartTests.verifyProductInCart()'><b>verifyProductInCart</b><br>Test class: Tests.CartTests<br>Test method: Verify added product appears in cart</td>
+<td></td>
+<td>0</td>
+<td>Tests.CartTests@3c3d9b6b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyEmptyLastNameError()'><b>verifyEmptyLastNameError</b><br>Test class: Tests.CheckoutTests<br>Test method: Submit with empty last name verify error</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace209128279", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace209128279'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifySuccessMessageText()'><b>verifySuccessMessageText</b><br>Test class: Tests.CheckoutTests<br>Test method: Verify success message text is correct</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1134388380", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1134388380'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyBadgeDisappearsAfterCheckout()'><b>verifyBadgeDisappearsAfterCheckout</b><br>Test class: Tests.CheckoutTests<br>Test method: Verify cart badge disappears after checkout</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1066504752", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1066504752'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.completeCheckoutWithValidDetails()'><b>completeCheckoutWithValidDetails</b><br>Test class: Tests.CheckoutTests<br>Test method: Complete checkout with valid details</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace638582764", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace638582764'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyOverviewProductPrice()'><b>verifyOverviewProductPrice</b><br>Test class: Tests.CheckoutTests<br>Test method: Verify product price on overview matches product page</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1498452883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1498452883'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyCartEmptyAfterCheckout()'><b>verifyCartEmptyAfterCheckout</b><br>Test class: Tests.CheckoutTests<br>Test method: Verify cart is empty after completing checkout</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1398492607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1398492607'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyAllFieldsEmptyError()'><b>verifyAllFieldsEmptyError</b><br>Test class: Tests.CheckoutTests<br>Test method: Submit with all empty fields verify error</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace783488821", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace783488821'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyOverviewUrl()'><b>verifyOverviewUrl</b><br>Test class: Tests.CheckoutTests<br>Test method: Verify overview URL contains checkout-step-two</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace573872851", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace573872851'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyConfirmationUrl()'><b>verifyConfirmationUrl</b><br>Test class: Tests.CheckoutTests<br>Test method: Verify confirmation URL contains checkout-complete</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace387505776", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace387505776'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyBackHomeButton()'><b>verifyBackHomeButton</b><br>Test class: Tests.CheckoutTests<br>Test method: Back Home button returns to products page</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace839404033", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace839404033'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyCheckoutUrl()'><b>verifyCheckoutUrl</b><br>Test class: Tests.CheckoutTests<br>Test method: Verify checkout URL contains checkout-step-one</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1358847474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1358847474'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyEmptyZipCodeError()'><b>verifyEmptyZipCodeError</b><br>Test class: Tests.CheckoutTests<br>Test method: Submit with empty zip code verify error</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1100176029", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1100176029'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyCheckoutPageTitle()'><b>verifyCheckoutPageTitle</b><br>Test class: Tests.CheckoutTests<br>Test method: Verify checkout page title</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace88573335", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace88573335'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifySuccessMessageDisplayed()'><b>verifySuccessMessageDisplayed</b><br>Test class: Tests.CheckoutTests<br>Test method: Verify success message is displayed</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace340234965", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace340234965'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyFinishNavigation()'><b>verifyFinishNavigation</b><br>Test class: Tests.CheckoutTests<br>Test method: Finish button navigates to confirmation page</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1819055096", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1819055096'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyCancelReturnsToCart()'><b>verifyCancelReturnsToCart</b><br>Test class: Tests.CheckoutTests<br>Test method: Cancel button returns to cart page</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace411802142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace411802142'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.completeFullCheckoutFlow()'><b>completeFullCheckoutFlow</b><br>Test class: Tests.CheckoutTests<br>Test method: Complete full checkout flow end to end</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace99722180", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace99722180'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyCancelOnOverview()'><b>verifyCancelOnOverview</b><br>Test class: Tests.CheckoutTests<br>Test method: Cancel on overview returns to products page</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace148802311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace148802311'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyEmptyFirstNameError()'><b>verifyEmptyFirstNameError</b><br>Test class: Tests.CheckoutTests<br>Test method: Submit with empty first name verify error</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1910491749", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1910491749'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyOverviewPageTitle()'><b>verifyOverviewPageTitle</b><br>Test class: Tests.CheckoutTests<br>Test method: Verify overview page title</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace247184928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace247184928'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+<tr>
+<td title='Tests.CheckoutTests.verifyOverviewProductName()'><b>verifyOverviewProductName</b><br>Test class: Tests.CheckoutTests<br>Test method: Verify product name on overview matches product added</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1314113263", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1314113263'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=148.0.7778.167)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b1ce988c4161b2b27db5c70839cec7, get {url=https://www.saucedemo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\AkhilaAravind\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62775}, goog:processID: 22584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62775/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57b1ce988c4161b2b27db5c70839cec7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at Base.BaseClassSauceDemo.setup(BaseClassSauceDemo.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Tests.CheckoutTests@79d8407f</td></tr>
+</table><p>
+</body>
+</html>
